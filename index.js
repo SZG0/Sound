@@ -2,7 +2,7 @@ const fs = require('fs');
 const Discord = require('discord.js');
 const Client = require('./client/Client');
 const config = require('./config.json');
-const { Player } = require('discord-player');
+const {Player} = require('discord-player');
 
 const client = new Client();
 client.commands = new Discord.Collection();
@@ -19,23 +19,23 @@ console.log(client.commands);
 const player = new Player(client);
 
 player.on('error', (queue, error) => {
-  // console.log("[${queue.guild.name}] Error emitted from the queue: ${error.message}");
-  console.log("[${queue.guild.name}] 播放列表发出的错误: ${error.message}");
+  // console.log(`[${queue.guild.name}] Error emitted from the queue: ${error.message}`);
+  console.log(`[${queue.guild.name}] 播放列表发出的错误: ${error.message}`);
 });
 
 player.on('connectionError', (queue, error) => {
-  // console.log("[${queue.guild.name}] Error emitted from the connection: ${error.message}");
-  console.log("[${queue.guild.name}] 连接发出的错误：: ${error.message}");
+  // console.log(`[${queue.guild.name}] Error emitted from the connection: ${error.message}`);
+  console.log(`[${queue.guild.name}] 连接发出的错误：: ${error.message}`);
 });
 
 player.on('trackStart', (queue, track) => {
-  // queue.metadata.send("▶ | Started playing: **${track.title}** in **${queue.connection.channel.name}**!");
-  queue.metadata.send("▶️ | 开始在 #${queue.connection.channel.name} 里播放 **${track.title}** 。");
+  // queue.metadata.send(`▶ | Started playing: **${track.title}** in **${queue.connection.channel.name}**!`);
+  queue.metadata.send(`▶️ | 开始在 <#${queue.connection.channel.id}> 里播放 **${track.title}** 。`);
 });
 
 player.on('trackAdd', (queue, track) => {
-  // queue.metadata.send("🎶 | Track **${track.title}** queued!");
-  queue.metadata.send("🎶 | 歌曲 **${track.title}** 已添加至播放播放列表。");
+  // queue.metadata.send(`🎶 | Track **${track.title}** queued!`);
+  queue.metadata.send(`🎶 | 歌曲 **${track.title}** 已添加至播放播放列表。`);
 });
 
 player.on('botDisconnect', queue => {
@@ -44,7 +44,7 @@ player.on('botDisconnect', queue => {
 });
 
 player.on('channelEmpty', queue => {
-  queue.metadata.send('❌ | Nobody is in the voice channel, leaving...');
+  //queue.metadata.send('❌ | Nobody is in the voice channel, leaving...');
   queue.metadata.send('❌ | 没有人在语言频道里，离开中……');
 });
 
@@ -85,7 +85,7 @@ client.on('messageCreate', async message => {
       })
       .catch(err => {
         // message.reply('Could not deploy commands! Make sure the bot has the application.commands permission!');
-        message.reply('无法部署指令! 请确保机器人有application.command（软件.指令）的权限!');
+        message.reply('无法部署指令! 请确保机器人有application.command的权限!');
         console.error(err);
       });
   }

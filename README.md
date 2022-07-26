@@ -26,7 +26,7 @@ First, make sure you have all the required tools installed on your local machine
 
 ### Installation
 
-```bash
+"""bash
 # Clone the repository
 git clone https://github.com/ZerOne/discord-bot.git
 
@@ -35,7 +35,7 @@ cd discord-bot/
 
 # Install the dependencies
 npm install
-```
+"""
 
 ## Required permissions
 
@@ -47,19 +47,19 @@ After cloning the project and installing all dependencies, you need to add your 
 
 ### Starting the application
 
-```bash
+"""bash
 node index.js
-```
+"""
 
 ### Starting the application using Docker
 
-```bash
+"""bash
 # Build the image
 docker build --tag discordbot .
 
 # Run the image
 docker run -d discordbot
-```
+"""
 
 ## Deploying commands
 
@@ -158,16 +158,16 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 一个简单的discord机器人，通过提供有用的命令，如播放音乐或删除文本信息，帮助你管理你的服务器。
 
-##内容表
+## 内容表
 
-* [要求](#requirements)
-* [开始](#开始-开始)
-* [常见错误](#common-errors)
-* [贡献](#contributing)
-* [作者](#author)
-* [许可证](#license)
+* [要求](#要求)
+* [开始](#开始使用)
+* [常见错误](#常见错误)
+* [贡献](#贡献)
+* [作者](#作者)
+* [许可证](#许可证)
 
-##要求
+## 要求
 
 - [Node](https://nodejs.org/en/) - 版本16或更高
 - [NPM](https://www.npmjs.com/)
@@ -180,7 +180,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 ### 安装
 
-```bash
+"""bash
 # 克隆版本库
 git clone https://github.com/ZerOne/dc-bot.git
 
@@ -189,7 +189,7 @@ cd dc-bot/
 
 # 安装依赖项
 npm install
-```
+"""
 
 ## 需要的权限
 
@@ -201,19 +201,19 @@ npm install
 
 ### 启动应用程序
 
-```bash
+"""bash
 node index.js
-```
+"""
 
 ### 使用Docker启动应用程序
 
-```bash
+"""bash
 # 构建镜像
 docker build --tag discordbot .
 
 # 运行该镜像
 docker run -d discordbot
-```
+"""
 
 ##部署命令
 
@@ -284,9 +284,9 @@ docker run -d discordbot
 
 此存储库中使用的包经常更新，尤其是 ytdl-core 包。这就是为什么如果您收到诸如"无效 URL：未定义"之类的错误或当机器人在运行播放命令时崩溃时，总是值得尝试更新这些内容的原因。
 
-```bash
+"""bash
 npm install ytdl-core@latest
-```
+"""
 
 ### FFMPEG 未安装在运行机器人的机器上
 
@@ -300,6 +300,6 @@ npm install ytdl-core@latest
 
 StarGolx & ZerOne
 
-## 执照
+## 许可证
 
-这个项目是在 MIT 许可下获得许可的 - 有关详细信息，请参阅 [LICENSE](LICENSE) 文件
+这个项目是在 MIT 许可下获得许可的 - 有关详细信息，请参阅 [LICENSE.md](LICENSE) 文件
