@@ -302,4 +302,4 @@ StarGolx & ZerOne
 
 ## 执照
 
-这个项目是在 MIT 许可下获得许可的 - 有关详细信息，请参阅 [LICENSE.md](LICENSE) 文件
+这个项目是在 MIT 许可下获得许可的 - 有关详细信息，请参阅 [LICENSE](LICENSE) 文件
