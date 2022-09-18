@@ -4,66 +4,20 @@
 
 ## 内容表
 
->* [要求](#要求)
 >* [开始](#开始使用)
->* [常见错误](#常见错误)
+>* [FAQ](#FAQ常见问题)
+>* [错误](#错误)
 >* [贡献](#贡献)
 >* [作者](#作者)
 >* [许可证](#许可证)
 
 ---
 
-<!--
-## 要求
-
->* [Node](https://nodejs.org/en/) - 版本16或更高
->* [NPM](https://www.npmjs.com/)
->* [FFMPEG](https://www.ffmpeg.org/)
-
----
--->
-
 ## 开始使用
-
-<!--
-
-首先，确保你在本地机器上安装了所有需要的工具，然后继续执行这些步骤。
-
-### 安装
-
-```bash
-# 克隆版本库
-git clone https://github.com/StarGolx/DCMusicBot.git
-
-# 进入该目录
-cd DCMusicBot/
-
-# 安装依赖项
-npm install
-```
-
----
-
-## 需要的权限
-
->**⚠️ *重要的是*：确保你的机器人启用了`applications.command`应用范围，这可以在[开发者门户](https://discord.com/developers/applications/)上的`OAuth2`选项下找到。**
-
-### 配置
-
-在克隆项目并安装所有的依赖项后，你需要在[config.json](./config.json)文件中添加你的Discord API token
-
-### 启动机器人
-
-```bash
-node index.js
-```
-
----
--->
 
 ## 部署命令
 
-在你使用bots斜线命令之前，你首先需要将它们添加到你的Discord服务器上。你可以使用`.deploy`命令来做到这一点。
+在您使用机器人斜线命令之前，你首先需要将它们添加到你的Discord服务器上，然后就可以使用`.deploy`命令来部署指令。
 
 ![deploy-cmds.png](./assets/deploy-cmds.png)
 
@@ -174,6 +128,10 @@ node index.js
 ```
 
 下一首歌曲对应的是编号1，以此类推
+
+## 错误
+
+如果发生某种错误，请通过Issues联系本人并附上图片来进一步确定解决方案，谢谢。
 
 ## 贡献
 
