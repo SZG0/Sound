@@ -163,22 +163,6 @@ node index.js
 
 ![playing_song.png](./assets/playing_song.png)
 
-## 常见错误
-
-下面是一个常见错误的列表，以及你如何解决这些问题。
-
-### 依赖不是最新的
-
-此存储库中使用的包经常更新，尤其是 ytdl-core 包。这就是为什么如果您收到诸如"无效 URL：未定义"之类的错误或当机器人在运行播放命令时崩溃时，总是值得尝试更新这些内容的原因。
-
-```bash
-npm install ytdl-core@latest
-```
-
-### FFMPEG 未安装在运行机器人的机器上
-
-`/play` 命令要求在运行机器人的机器上安装 FFMPEG。 可以在官方[FFMPEG 网站](https://www.ffmpeg.org/)上下载。
-
 ## FAQ常见问题
 
 * ### 如何查看歌曲编号？
