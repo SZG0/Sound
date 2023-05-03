@@ -139,7 +139,7 @@
 
 ## 作者
 
-StarGolx & ZerOne
+@ZsOg & @SZG0
 
 ## 许可证
 
