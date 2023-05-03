@@ -139,7 +139,7 @@
 
 ## 作者
 
-@ZsOg & @SZG0
+[ZsOg](https://www.github.com/zsog) & [SZG0](https://www.github.com/szg0/)
 
 ## 许可证
 
